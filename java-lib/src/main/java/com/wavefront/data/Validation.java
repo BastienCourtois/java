@@ -42,6 +42,7 @@ public class Validation {
           cur != 95) {
         if (!((i == 0 && cur == 0x2206) || (i == 0 && cur == 0x0394) || (i == 0 && cur == 126))) {
           // first character can also be \u2206 (∆ - INCREMENT) or \u0394 (Δ - GREEK CAPITAL LETTER DELTA)
+          // or ~ tilda character for internal metrics
           return false;
         }
       }
